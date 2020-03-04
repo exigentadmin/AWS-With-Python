@@ -6,6 +6,7 @@ iam = boto3.client('iam') # IAM low level client object
     We need to make sure group is present in AWS IAM
     As we do not have group named Tester, We will create it first
     IN your case you can skip this step if group is already created in your account
+    This is test commit.
 """
 
 create_group_response = iam.create_group(GroupName = 'Tester')
