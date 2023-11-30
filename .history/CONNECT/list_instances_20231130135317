@@ -1,0 +1,9 @@
+import boto3
+import json
+
+#list all groups using client
+connect = boto3.client('connect') #C
+response = connect.list_instances()
+
+response_json = json.dumps(response, indent = 4) #conv
+print(response_json)

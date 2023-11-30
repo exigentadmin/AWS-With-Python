@@ -1,0 +1,10 @@
+import boto3
+import json
+
+#list all groups using client
+connect = boto3.client('connect') #C
+response = connect.list_instances(
+    NextToken='string',
+    MaxResults=123
+)
+print(response)

@@ -4,7 +4,7 @@ import json
 #list all groups using client
 connect = boto3.client('connect') #Connect
 response = connect.list_routing_profiles(
-    InstanceId='485e338c-966c-4d6c-a43a-d90c0895c8ae'
+    InstanceId='67faf965-78f3-49d8-a49a-f98a2b061700'
 )
 
 #response from aws is a dict
